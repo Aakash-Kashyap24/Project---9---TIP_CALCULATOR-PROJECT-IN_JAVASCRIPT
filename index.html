@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIP FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="main">
+            <div class="title">
+                <p class="name">TIP CALCULATOR</p>
+            </div>
+
+            <div class="pleaseFill showOrHide">
+                <p class="noBill noBillShow">Bill Amount Cannot Be Blank</p>
+                <p class="noPeople noPeopleShow">Number Of Users Must Be Greater Than Zero</p>
+                <p class="noOption noOptionShow">You Must Select A Service</p>
+                <!-- <div class="billOnly">
+                    <p>Number Of Users Must Be Greater Than Zero</p>
+                    <p>You Must Select A Service</p>
+                </div>
+                <div class="peopleOnly">
+                <p>Bill Amount Cannot Be Blank</p>
+                    <p>You Must Select A Service</p>
+                </div> -->
+                <!-- <div class="noFill">
+
+                    <p>Bill Amount Cannot Be Blank</p>
+                    <p>Number Of Users Must Be Greater Than Zero</p>
+                    <p>You Must Select A Service</p>
+
+
+
+
+
+                </div> -->
+                <!-- <div class="optionOnly">
+                    <p>Bill Amount Cannot Be Blank</p>
+                    <p>Number Of Users Must Be Greater Than Zero</p>
+                </div>
+                <div class="firstAndLastOnly">
+                    <p>Number Of Users Must Be Greater Than Zero</p>
+                </div>
+
+                <div class="firstAndSecondOnly">
+                    <p>Number Of Users Must Be Greater Than Zero</p>
+                    <p>You Must Select A Service</p>
+                </div>
+                <div class="lastandSecondOnly">
+                    <p>Bill Amount Cannot Be Blank</p>
+
+                </div> -->
+
+            </div>
+
+
+            <div class="bill">
+                <label for="billAmount">How Much Was Your Bill ?</label>
+
+                <div class="input input1">
+                    <div class="img">
+                        <img src="images/ruppee.svg" alt="" srcset="">
+
+                    </div>
+                    <input type="number" class="inputBox billAmount" id="billAmount" value="" min="5" max="1000"
+                        step="1">
+
+                </div>
+
+
+
+                <label class="label2" for="totalPeople">How Many People Sharing The Bill ?</label>
+                <div class="input input2">
+
+                    <div class="img">
+                        <img src="images/user.svg" alt="" srcset="">
+
+                    </div>
+                    <input type="number" class="inputBox totalPeople" id="totalPeople" value="" min="5" max="1000"
+                        step="1">
+
+
+                </div>
+
+                <label for="totalPeople">How Was Our Service</label>
+
+                <select name="" id="service" class="service">
+                    <option value="Choose...">Choose...</option>
+                    <option value="20">Great-20%</option>
+                    <option value="10">Good-10%</option>
+                    <option value="2">Bad-2%</option>
+
+                </select>
+
+                <div class="btn">
+                    <button class="calculate">Calculate</button>
+
+                </div>
+                <div class="animation animationHide">
+                    <div class="box box1"></div>
+                    <div class="box box2"></div>
+                    <div class="box box3"></div>
+                    <div class="box box4"></div>
+                </div>
+                <div class="showHere showOrNot">
+                    <p class="tipAmount">Tip Amount $ <span class="tip">0.003</span></p>
+
+                    <p class="totalAmount">Total Amount $ <span class="total">100</span> </p>
+                    <p class="owesAmount">Each Person Owes $ <span class="owes">0.03</span> </p>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
